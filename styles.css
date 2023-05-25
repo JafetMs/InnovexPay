@@ -19,6 +19,7 @@ body{
 }
 
 img,picture,svg,video{
+    max-width: 100%;
     display: block;
 }
 html{
@@ -30,6 +31,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    color:white;
+    font-size: 32px;
+}
 
 
 .bg-grd{
@@ -38,10 +43,12 @@ a{
     align-items: center;
     background-image:  linear-gradient(360deg,#8c52ff,#5ce1e6);
     height: 15vh;
-    padding-inline: 22rem;
+    padding-right: 22rem;
+    padding-left: 17rem;
 }
 
 .bg-grd img {
+    
     height: 22vh;
     cursor: pointer;
     
@@ -114,4 +121,47 @@ a{
     color:white;
     padding:2rem;
     font-size: 2.5rem;
+}
+
+/* Index */
+main{
+    display: flex;
+    flex-direction: column;
+    border: solid red 2px;
+    /* background-image: url(img/beach.jpeg);
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    
+    /* justify-content: center; */
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.bg{
+    
+}
+.client__name{
+    color:white;
+    
+}
+
+.client__name-bold{
+
+}
+
+.welcome{
+    /* margin-top: 12rem; */
+    font-size: 38px;
+    color:#ffffff;
+    font-weight: 700;
+
+}
+
+.welcome-text{
+    margin-top:1rem;
+    font-size: 30px;
+    padding-inline: 12rem;
 }
