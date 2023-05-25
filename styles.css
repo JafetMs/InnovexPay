@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+/* Reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{ 
+    margin:0;
+    padding:0;
+    font:inherit;
+}
+
+body{
+    min-height: 100vh;
+    
+    background-color: #282C34;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img,picture,svg,video{
+    display: block;
+}
+html{
+    
+    font-size: 62.5%;  /* 1 rem = 10 px */
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.bg-grd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image:  linear-gradient(360deg,#8c52ff,#5ce1e6);
+    height: 15vh;
+    padding-inline: 22rem;
+}
+
+.bg-grd img {
+    height: 22vh;
+    cursor: pointer;
+    
+}
+
+.bg-grd a {
+    font-size: 3rem;
+    
+}
+
+.box{ 
+    margin-top:8rem;
+    background-color: azure;
+    margin-inline: 65vh;
+    height: 55rem;
+    justify-content: center;
+    text-align: center;
+    border: solid rgba(0, 0, 255, 0) 2px;
+    margin-bottom:8rem;
+    position: relative;
+}   
+
+.box::after{
+    position: absolute;
+    top:0;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right,#8c52ff,#5ce1e6);
+    filter:blur(15px);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.box > *{
+    margin-bottom: 30px;
+    
+}
+
+.txt_login{
+    
+    margin-top: 35px;
+    font-size: 6rem;
+    font-weight: bold;
+    
+    
+}
+.txt_login2{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.infoUser{
+    font-size: 2.5rem;
+    
+}
+
+.infoUser input{
+    font-size: 2.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: #2e2e2e49 solid;
+    outline:none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.signIn{
+    background-color: #272343;
+    color:white;
+    padding:2rem;
+    font-size: 2.5rem;
+}
