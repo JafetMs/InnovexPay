@@ -89,7 +89,7 @@ p{
 }
 
 .txt_login{
-    
+    color: #272343;
     margin-top: 35px;
     font-size: 6rem;
     font-weight: bold;
@@ -125,43 +125,44 @@ p{
 
 /* Index */
 main{
-    display: flex;
-    flex-direction: column;
-    border: solid red 2px;
-    /* background-image: url(img/beach.jpeg);
-    height: 50rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
-    
-    /* justify-content: center; */
-    align-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.bg{
-    
-}
-.client__name{
-    color:white;
+    position: absolute;
     
 }
 
-.client__name-bold{
+.imgC{
+    position: relative;
+    opacity: .5;
+    
+    
+}
 
+.textC {
+    display: inline;   
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-inline: 0;
+    margin:0;
+    padding:0;  
+    width: 100%;  
 }
 
 .welcome{
-    /* margin-top: 12rem; */
-    font-size: 38px;
-    color:#ffffff;
-    font-weight: 700;
-
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+}
+.innovex{
+    font-weight: 1000;
 }
 
 .welcome-text{
-    margin-top:1rem;
-    font-size: 30px;
-    padding-inline: 12rem;
+    padding-top: 22px;
+    margin:0;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
 }
