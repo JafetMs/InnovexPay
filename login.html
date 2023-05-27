@@ -19,24 +19,22 @@
 
     <div class="box">
         
-        <p class="txt_login">Login</p>
-        <p class="txt_login2">Welcome Back!</p>
-
-        <div class="infoUser">
-            <div>
-                
-                <input type="text" id="name" placeholder="Username">
-            </div>
+        <form class="infoUser">
+            <p class="txt_login">Login</p>
             
             <div>
-                
+                <input type="text" id="name" name="name" placeholder="Username">
+            </div>
+            <div>
                 <input type="password" id="password" placeholder="Password">
             </div>
-            
-        </div>
-        
-        <button class="signIn">Sign In</button>
 
+            <button class="signIn" id="signIn" type="submit">Sign In</button>
+        </form>
+        
     </div>
+    
 </body>
+
+    <script src="js/login.js"></script>
 </html>
