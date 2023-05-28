@@ -220,3 +220,33 @@ main{
 .dolar{
     opacity: .7;
 }
+
+.miniContainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.operations{
+    display: flex;
+    border: 1px solid #922828;
+    margin: 0 auto;
+    justify-content: center;
+    gap:5rem;
+    
+}
+
+.operation{
+    border: 1px solid #090775;
+    cursor: pointer;
+    background:  linear-gradient(360deg,#8c52ff,#5ce1e6);
+    width: 85px;
+    
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.option{
+    font-size: 25px;
+}
