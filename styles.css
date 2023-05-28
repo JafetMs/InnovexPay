@@ -56,6 +56,10 @@ p{
     
 }
 
+.enlaces > *{
+    margin: 22px;
+}
+
 .box{ 
     display: inline-block;
     margin:35rem;
@@ -84,6 +88,8 @@ p{
     width: 100%;
     height: 100%;
 }
+
+
 
 
 
@@ -161,6 +167,7 @@ main{
 }
 .innovex{
     font-weight: 1000;
+    font-size: 40px;
 }
 
 .welcome-text{
@@ -170,4 +177,46 @@ main{
     text-align: center;
     align-items: center;
     font-weight: 400;
+}
+
+/* dashboard */
+.welcome-user{
+    /* margin-right: 25px; */
+    /* padding: 4vh 4vh; */
+    padding: 40px 1px; 
+}
+
+.container{
+    border: 1px solid #ccc;
+    margin-inline: 8rem ; /* Centrar el contenedor en la página */
+    
+}
+
+.containerCard{
+    /* border: 1px solid #922828; */
+    width: 35vw;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    
+}
+
+.containerCard img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.balance{
+    text-align: center;
+    opacity: .6;
+}
+
+.amount{
+    text-align: center;
+    font-size: 58px;
+    line-height: 1.5;
+    
+    
+}
+.dolar{
+    opacity: .7;
 }

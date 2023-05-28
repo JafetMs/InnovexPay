@@ -1,11 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    const accounts = [
-        { userName: 'Jafet', password:'123', balance: 1000},
-        { userName: 'Julia', password:'321', balance: 2000},
-        { userName: 'Charlotte', password:'devF', balance: 0},
-    ]
+    
     
     const inputUser = document.querySelector('#name');
     const inputPassword = document.querySelector('#password');
@@ -26,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function(){
     function validate(e){
 
         if(e.target.id === 'name'){
-             userName = e.target.value;
+            localStorage.setItem('userName',e.target.value);
+            userName = e.target.value;
             console.log(userName);
             
         }
@@ -50,6 +47,6 @@ document.addEventListener('DOMContentLoaded', function(){
             console.log('Credenciales inválidas');
         }
     }
-    module.exports = user;
+    
 })
 
