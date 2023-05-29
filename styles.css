@@ -189,13 +189,19 @@ main{
 .container{
     border: 1px solid #ccc;
     margin-inline: 8rem ; /* Centrar el contenedor en la página */
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh;  */
+}
+.container > * {
+    margin: 0 auto;
 }
 
 .containerCard{
     /* border: 1px solid #922828; */
     width: 35vw;
-    margin: 0 auto;
     margin-bottom: 35px;
     
 }
@@ -241,7 +247,7 @@ main{
     border: 1px solid #090775;
     cursor: pointer;
     background:  linear-gradient(360deg,#8c52ff,#5ce1e6);
-    width: 85px;
+    width: 62px;
     
 }
 .rotate{
@@ -249,4 +255,12 @@ main{
 }
 .option{
     font-size: 25px;
+}
+
+.number{
+    margin-top: 25px;
+    border: none;
+    font-size: 30px;
+    height: 40px;
+    margin-bottom: 300px;
 }

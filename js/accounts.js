@@ -13,3 +13,6 @@ localStorage.setItem('user2',Julia);
 const Charlotte = JSON.stringify(accounts[2]);
 localStorage.setItem('user3',Charlotte); 
 
+const accountsLS = localStorage.setItem('accountsLS',JSON.stringify(accounts))
+
+
