@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
              password = e.target.value;
             console.log(password);
         }
+
        
 
     }   
@@ -38,9 +39,12 @@ document.addEventListener('DOMContentLoaded', function(){
     function authenticateUser(userName,password){
         // Buscar el usuario en la lista de cuentas
         const user = accounts.find(account => account.userName === userName && account.password === password);
-
+        userName = localStorage.setItem('userName',user.userName);
+        balance = localStorage.setItem('balance',JSON.stringify(user.balance));
+        
         if (user) {
             // Usuario autenticado
+
             window.location.href = 'dashboard.html'; // Reemplaza 'dashboard.html' con la URL de tu página de dashboard
         } else {
             // Credenciales inválidas
