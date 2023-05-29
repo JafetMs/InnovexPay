@@ -8,8 +8,10 @@ welcome.innerHTML = localStorage.getItem('userName').toString();
 const amount = document.querySelector('.amount');
 amount.innerHTML += localStorage.getItem('balance');
 
-
-
+const img = document.querySelector('.cardUser');
+const user = localStorage.getItem('userName');
+console.log(user);
+img.src = `/img/${user}.png`;
 
 const deposit = document.querySelector('#deposit');
 const withdraw = document.querySelector('#withdraw');
@@ -54,21 +56,3 @@ withdraw.addEventListener('click',(e) => {
     inputBottom.value = '';
     
 })
-
-
-// document.addEventListener('DOMContentLoaded', ()=> {
-//     let accountsLS = JSON.parse(localStorage.getItem('accountsLS')) || [];
-//     console.log(accountsLS);
-//     user = accountsLS.forEach( (account,imdex)=> {
-
-//         if( userName === account.userName){
-//             console.log(account.userName);
-//             let balance = JSON.parse(account.balance);
-//             console.log(balance);
-//         }
-//     });
-    
-    
-
-    
-// })
