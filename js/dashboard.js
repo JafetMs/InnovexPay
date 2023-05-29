@@ -34,11 +34,11 @@ deposit.addEventListener('click',(e) => {
     localStorage.setItem('balance',JSON.stringify(balance));
     amount.innerHTML = balance;
     inputBottom.value = '';
-    
+    actualizarLS(user,balance);
 })
 
 withdraw.addEventListener('click',(e) => {
-    console.log('Clickeas withdrwa')
+    
     let input = parseFloat(document.querySelector('.number').value);
     let balance = parseFloat(localStorage.getItem('balance'));
     if(balance < input || inputBottom.value == ''){
@@ -54,5 +54,22 @@ withdraw.addEventListener('click',(e) => {
     localStorage.setItem('balance',JSON.stringify(balance));
     amount.innerHTML = balance;
     inputBottom.value = '';
-    
+    actualizarLS(user,balance);
 })
+
+function actualizarLS(user,balance) {
+    let accountsUpdated = JSON.parse(localStorage.getItem('accounts'));
+    console.log( accountsUpdated);
+
+    const accountToUpdate = accounts.find(account => account.userName === user);
+    console.log(accountToUpdate );
+
+    if (accountToUpdate) {
+        accountToUpdate.balance =  balance;
+        
+        // Guarda el array actualizado en el almacenamiento local
+        localStorage.setItem('accounts', JSON.stringify(accounts));
+      }
+      
+}
+
