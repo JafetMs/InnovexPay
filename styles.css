@@ -187,7 +187,7 @@ main{
 }
 
 .container{
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     margin-inline: 8rem ; /* Centrar el contenedor en la página */
     display: flex;
     flex-direction: column;
@@ -236,7 +236,7 @@ main{
 
 .operations{
     display: flex;
-    border: 1px solid #922828;
+    /* border: 1px solid #922828; */
     margin: 0 auto;
     justify-content: center;
     gap:5rem;
