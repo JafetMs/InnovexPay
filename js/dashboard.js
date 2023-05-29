@@ -24,7 +24,10 @@ deposit.addEventListener('click',(e) => {
         console.log('The balance must be greather than $0');
         return;
     }
-    console.log('Si se imprime esto debe cambiar todo');
+    if(input > 50000){
+        console.log('El cliente no puede depositar mas de 50,000');
+        return;
+    }
     let balance = parseFloat(localStorage.getItem('balance')) + input;
     localStorage.setItem('balance',JSON.stringify(balance));
     amount.innerHTML = balance;
@@ -38,6 +41,10 @@ withdraw.addEventListener('click',(e) => {
     let balance = parseFloat(localStorage.getItem('balance'));
     if(balance < input || inputBottom.value == ''){
         console.log('The input must be less than balance');
+        return;
+    }
+    if(input > 30000){
+        console.log('El cliente no puede retitar mas de 30,000');
         return;
     }
     balance-= input;
